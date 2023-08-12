@@ -75,7 +75,7 @@ npm install webpack webpack-cli --save-dev
 }
 ```
 
-##webpack.config.js
+## webpack.config.js
 -  src / index.js 파일에서 시작하여 의존성 있는 파일들을 모두 포함하여 public / bundle.js 파일로 번들링한다. 
 ```js
 const { resolve } = require('path')
