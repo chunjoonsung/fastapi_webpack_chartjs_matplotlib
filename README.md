@@ -94,16 +94,18 @@ module.exports = {
 - /data/chart 요청하면 json 데이터를 전송한다.
 
 ```python
+
 from fastapi import FastAPI, Request
 from fastapi.responses import HTMLResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
-from routes import data
+from routes import data, image
 
 app = FastAPI()
 
 app.mount("/static", StaticFiles(directory="static"), name="static")
 app.include_router(data.router)
+app.include_router(image.router)
 
 templates = Jinja2Templates(directory="templates")
 
