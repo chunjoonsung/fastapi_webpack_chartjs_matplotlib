@@ -2,13 +2,17 @@
 
 
 ## fastapi 인스톨
+```bash
 $ pip install fastapi
 $ pip install jinja2
 $ pip install matplotlib
 $ pip install uvicorn
+```
 
 ## 웹서버 구동
+```bash
 $ uvicorn server:app --port 3080 --reload
+```
 
 ## 디렉토리 구조
 - src 밑에 있는 javascript 파일을 합쳐서 public 밑에 있는 bundle.js 파일로 번들링한다.
